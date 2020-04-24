@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    line-height: 1.4;
+    color: #cccccc;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+.lead{
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.py-1 { padding: 1.5rem 0; }
+.py-2 { padding: 2rem 0; }
+.py-3 { padding: 3rem 0; }
+
+.img-1,.img-2,.img-3{
+    opacity: 0.7;
+}
+
+.img-1{
+    background: url('https://source.unsplash.com/random?clouds') no-repeat center center/cover;
+    min-height: 100%;
+    position: relative;
+    background-attachment: fixed;
+
+    /* normal */
+    /* background-attachment: scroll; */
+}
+.img-2{
+    background: url('https://source.unsplash.com/random?forest') no-repeat center center/cover;
+    min-height: 400px;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.img-3{
+    background: url('https://source.unsplash.com/random?rain') no-repeat center center/cover;
+    min-height: 400px;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.bg-dark{
+    background: #2E4053;
+}
+
+.bg-light{
+    background: #515A5A;
+    color: #f4f4f4;
+}
+
+
+.logo{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+}
+
+@media(max-width: 600px){
+    .img-1{ background-attachment: scroll; }
+    .img-2{ background-attachment: scroll; }
+    .img-3{ background-attachment: scroll; }
+}
